@@ -3,7 +3,7 @@
     <v-container class="my-4">
       <v-row>
         <v-card class="elevation-16">
-          <v-col cols="12" md="12" class="my-10">
+          <v-col cols="12" md="12" class="my-8">
             <h4 tile class="text-center my-1">SIMULADOR</h4>
 
             <v-card light outlined tile>
@@ -13,7 +13,7 @@
                     cols="12"
                     class="text-center black--text font-weight-black"
                   >
-                    <p class="black--text font-weight-black">source</p>
+                    <p class="black--text font-weight-black">ORIGEM</p>
                     <v-select
                       class="barjust elevation-5"
                       color="blue"
@@ -33,7 +33,7 @@
                     cols="12"
                     class="text-center black--text font-weight-black"
                   >
-                    <p class="black--text font-weight-black">destiny</p>
+                    <p class="black--text font-weight-black">DESTINO</p>
                     <v-select
                       class="barjust elevation-5"
                       color="blue"
@@ -53,7 +53,7 @@
                     cols="12"
                     class="text-center black--text font-weight-black"
                   >
-                    <p class="black--text font-weight-black">time</p>
+                    <p class="black--text font-weight-black">TEMPO</p>
 
                     <input
                       class="barjust time elevation-5"
@@ -72,7 +72,7 @@
                     cols="12"
                     class="text-center black--text font-weight-black"
                   >
-                    <p class="black--text font-weight-black">plan</p>
+                    <p class="black--text font-weight-black">PLANO</p>
                     <v-select
                       class="barjust plan elevation-5"
                       color="blue"
@@ -122,8 +122,9 @@
                   </v-col>
                 </v-col>
               </v-row>
-              <h6 class="text-center black--text font-weight-black">
-                após a carência do plan contratado taxa de 10%/min.
+
+              <h6 class="adjust text-center black--text font-weight-black">
+                após a carência do plano contratado taxa de 10%/min.
               </h6>
             </v-card>
 
@@ -342,12 +343,18 @@ export default {
 </script>
 
 <style lang="scss">
-.plan {
-  width: 150px;
+.adjust {
+  margin-bottom: 10px;
 }
+
 .barjust {
   height: 55px;
 }
+
+.plan {
+  width: 150px;
+}
+
 .time {
   outline-color: rgb(38, 131, 207);
   border-color: black;
