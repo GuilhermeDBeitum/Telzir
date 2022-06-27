@@ -169,7 +169,7 @@ export default {
       withoutFalemais: 0,
       sourceDdd: ["011", "016", "017", "018"],
       destinyDdd: ["011", "016", "017", "018"],
-      plansFale: ["Fale+30", "Fale+60", "Fale+90", "Fale+120"],
+      plansFale: ["Fale+ 30", "Fale+ 60", "Fale+ 90", "Fale+ 120"],
     };
   },
   computed: {},
@@ -220,7 +220,7 @@ export default {
       this.vTotal = vTotal;
 
       switch (maisplan) {
-        case "Fale+30":
+        case "Fale+ 30":
           if (vtime <= 30) {
             return (this.vTotal = 0);
           } else {
@@ -228,7 +228,7 @@ export default {
               (vtariff + vtariff * (10 / 100)) * (vtime - 30));
           }
 
-        case "Fale+60":
+        case "Fale+ 60":
           if (vtime <= 60) {
             return (this.vTotal = 0);
           } else {
@@ -236,7 +236,7 @@ export default {
               (vtariff + vtariff * (10 / 100)) * (vtime - 60));
           }
 
-        case "Fale+90":
+        case "Fale+ 90":
           if (vtime <= 90) {
             return (this.vTotal = 0);
           } else {
@@ -244,7 +244,7 @@ export default {
               (vtariff + vtariff * (10 / 100)) * (vtime - 90));
           }
 
-        case "Fale+120":
+        case "Fale+ 120":
           if (vtime <= 120) {
             return (this.vTotal = 0);
           } else {
@@ -259,11 +259,11 @@ export default {
 
     formatCash(n) {
       return (
-        "$ " +
+        "R$ " +
         n
           .toFixed(2)
           .replace(".", ",")
-          .replace(/(\d)(?=(\d{3})+,)/g, "$1.")
+          .replace(/(\d)(?=(\d{3})+,)/g, "R$1.")
       );
     },
 
