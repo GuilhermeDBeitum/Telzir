@@ -7,6 +7,13 @@
 
 ## https://falemais.web.app/
 
+
+## Project setup
+
+```
+npm install
+```
+
 ## Vue
 
 ```
@@ -17,18 +24,6 @@ npm install vue
 
 ```
 vue add vuetify
-```
-
-## Vue routes
-
-```
-vue add routes
-```
-
-## Project setup
-
-```
-npm install
 ```
 
 ### Compiles and hot-reloads for development
